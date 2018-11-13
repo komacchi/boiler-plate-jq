@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["if", "else", "define-mixin", "mixin", "for"]
+    }],
+    "property-no-unknown": [true, {
+      "checkPrefixed": true
+    }]
+  }
+}

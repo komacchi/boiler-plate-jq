@@ -1,0 +1,67 @@
+html,
+body,
+h1,
+h2,
+h3,
+dl,
+dd,
+p,
+a,
+small,
+strong,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  line-height: 1;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+}
+
+header,
+main,
+footer,
+section {
+  display: block;
+}

@@ -1,0 +1,53 @@
+block param
+  - 
+    var pages = [
+      {name: 'PC_pages_template', description: 'page-1'},
+      {name: 'pages_template2', description: 'page-2'},
+      {name: 'pages_template3', description: 'page-3'},
+      {name: 'pages_template4', description: 'page-4'},
+      {name: 'pages_template5', description: 'page-5'},
+      {name: 'pages_template6', description: 'page-6'}
+    ]
+
+doctype
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title URL一覧
+    style.
+      .title {
+        color: #fff;
+        background-color: #333;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .list-item {
+        font-size:14px;
+        border: 1px solid #ccc;
+      }
+
+      .list-item a {
+        display: block;
+        color: #333;
+        padding: 10px;
+      }
+
+      .list-item a:hover {
+        color: #fff;
+        background-color: #333;
+      }
+
+  body
+    block body
+      .title URL一覧
+      ul
+        each list in pages
+          li.list-item
+            a(href=`${list.name}.html`, target='_blank') #{list.name}
+            | 　#{list.description}
+  

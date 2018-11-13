@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid #ccc;
+  background: #fff;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 33px 0 64px;
+    text-align: center;
+  }
+
+  &__copy {
+    color: #333;
+  }
+}

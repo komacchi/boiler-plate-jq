@@ -1,0 +1,17 @@
+include ../config/_variables
+doctype
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    include ../modules/_meta
+    block custumhead
+    link(rel="stylesheet", href="css/pc.css")
+    title #{title}
+  body
+    block body
+    script(src='js/lib/jquery-3.3.1.min.js')
+    script(src='js/main.js')
+    
+    include ../modules/_analytics

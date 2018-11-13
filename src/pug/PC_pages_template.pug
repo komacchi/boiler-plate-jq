@@ -1,0 +1,16 @@
+extends ./layouts/_pc
+
+block body  
+  include ./component/_GlobalHeader
+
+  h1 my-boiler-plate
+  .containerWrapper
+    .container.mb32
+      h2 heading
+      a.btn__primary.mb16(href='') button
+      a.btn__secondary(href='') button
+      p.mt16 ああああああああああああああ
+      p.mt16.ctr ああああああああああああああ
+  
+  include ./component/_GlobalFooter
+  block analytics

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #707070;
+        font-size: 20px;
+        font-family: HiraKakuPro-W6, Hiragino Kaku Gothic Pro;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="グループ化_1" data-name="グループ化 1" transform="translate(-155 -74)">
+    <g id="box" class="cls-1" transform="translate(155 74)">
+      <rect class="cls-3" width="200" height="50"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="199" height="49"/>
+    </g>
+    <text id="Logo" class="cls-2" transform="translate(232 107)"><tspan x="0" y="0">Logo</tspan></text>
+  </g>
+</svg>

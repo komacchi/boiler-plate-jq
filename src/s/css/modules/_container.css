@@ -1,0 +1,16 @@
+/* container */
+
+.containerWrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px 40px;
+  width: 640px;
+}

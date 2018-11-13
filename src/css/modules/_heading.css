@@ -1,0 +1,15 @@
+/* heading */
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 16px auto 8px;
+  width: 940px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto 16px;
+}
