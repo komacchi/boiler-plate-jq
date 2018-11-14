@@ -1,4 +1,4 @@
-# my-boiler-plate-jquery
+# boiler-plate-jquery
 
 including jQuery3.3.x
 
