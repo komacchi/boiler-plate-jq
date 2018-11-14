@@ -13,7 +13,7 @@
     "build-js": "$npm_package_config_dir/build_js.sh",
     "browsersync": "browser-sync start -s ./dist/ -f ./dist/ --port 3004",
     "clean": "rimraf ./dist",
-    "start": "yarn clean && WATCH=true npm-run-all -p build-* browsersync",
+    "start": "yarn clean && WATCH=true npm-run-all -p build-* && yarn browsersync",
     "dev": "yarn clean && MODE=dev yarn npm-run-all -p build-*",
     "build": "yarn clean && npm-run-all -p build-*"
   },

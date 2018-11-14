@@ -1,9 +1,10 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'none',
   entry: {
     'js/pc':['@babel/polyfill', './src/js/index.js'],
-    's/js/sp': './src/s/js/index.js'
+    's/js/sp':['@babel/polyfill', './src/s/js/index.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),

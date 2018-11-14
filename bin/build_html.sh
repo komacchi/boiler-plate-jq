@@ -16,7 +16,8 @@ taskSP="${JOB} ${taskOption} ${SRC_SP}*.${JOB} -o ${BUILD}s/"
 tasklint="${LINT} --config ${lintConfig} ${BUILD}/**/*.html"
 
 if [ $WATCH ]; then
-  ${taskPC} --watch & ${taskSP} --watch & ${tasklint}
+  echo "--- Watching Html... ---"
+  ${taskPC} --watch & ${taskSP} --watch & ${tasklint} &
 else
   ${taskPC} & ${taskSP} & ${tasklint}
 fi

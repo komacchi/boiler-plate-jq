@@ -4,18 +4,14 @@ echo "--- Build Image ---"
 
 # JOB="cpx"
 
-# BUILD_SRC="dist"
-# srcPC="src/img/**/*.*"
-# srcSP="src/s/img/**/*.*"
+BUILD_SRC="dist"
+SRC="src/**/*.{gif,png,jpg,jpeg,svg}"
 
-taskPC="cpx 'src/img/**/*.*' 'dist/img'"
-taskSP="cpx 'src/s/img/**/*.*' 'dist/s/img'"
+task="cpx ${SRC} ${BUILD_SRC}"
 
 if [ $WATCH ]; then
-  ${taskPC} --watch &
-  ${taskSP} --watch
-
+  ${task} --watch &
+  echo "--- Watching Images... ---"
 else
-  $taskPC &
-  $taskSP
+  ${task}
 fi

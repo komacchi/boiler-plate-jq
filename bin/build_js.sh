@@ -18,9 +18,9 @@ echo "--- Run eslint ---"
 eslint -c standard ${SRC}
 
 if [ $WATCH ]; then
-  echo "--- JS Watch ---"
-  ${taskLibCopy} &
-  ${JOB} --mode development --watch
+  echo "--- Watching JS... ---"
+  ${taskLibCopyPC} & ${taskLibCopySP} & 
+  ${JOB} --progress --devtool source-map --watch &
 else
   if [ "$MODE" = "dev" ]; then
     echo "--- Build JS Development ---"

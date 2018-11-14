@@ -19,8 +19,8 @@ stylelint ${srcPC}pc.css
 stylelint ${srcSP}sp.css
 
 if [ $WATCH ]; then
-  echo "--- Watch CSS ---"
-  ${taskPC} -m -w & ${taskSP} -m -w
+  echo "--- Watching CSS... ---"
+  ${taskPC} -m -w & ${taskSP} -m -w &
 
 else
   echo "--- Build CSS Production ---"
