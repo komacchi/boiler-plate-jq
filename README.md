@@ -10,11 +10,11 @@ including jQuery3.3.x
 
 ## Setup
 
-`yarn`
+`$ yarn`
 
 ## Development Start
 
-`yarn start`
+`$ yarn start`
 
 - including html,css,js watch task
 - browser-sync
@@ -23,11 +23,11 @@ including jQuery3.3.x
 
 ### Build dev
 
-`yarn dev`
+`$ yarn dev`
 
 ### Build production
 
-`yarn build`
+`$ yarn build`
 
 
 ## Webpack
