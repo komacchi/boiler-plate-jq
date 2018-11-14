@@ -32,6 +32,6 @@ including jQuery3.3.x
 
 ## Webpack
 
-- babel for PC
+- polyfill
 - multi entrypoint (for pc/sp)
 - multi output
