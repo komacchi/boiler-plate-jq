@@ -1,4 +1,4 @@
-# boiler-plate-jquery
+# boiler-plate-jq
 
 including jQuery3.3.x
 
